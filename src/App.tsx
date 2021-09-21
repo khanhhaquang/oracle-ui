@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home, Transfer } from 'pages';
-import "./App.scss"
+import './App.scss';
 
 const App = () => (
   <Router>
@@ -8,7 +8,7 @@ const App = () => (
       <Route exact path={'/' || '/home'}>
         <Home />
       </Route>
-      <Route exact path='/transfer'>
+      <Route exact path="/transfer">
         <Transfer />
       </Route>
       <Route path="*">
