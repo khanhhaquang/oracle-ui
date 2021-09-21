@@ -1,2 +1,2 @@
-export { default } from './Home';
-export { default } from './Transfer';
+export { default as Home } from './Home';
+export { default as Transfer } from './Transfer';
