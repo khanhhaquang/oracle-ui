@@ -1,3 +1,1 @@
-export type TTokenInfo = {
-
-}
+export type TTokenInfo = {};

@@ -1,5 +1,5 @@
-import React from "react"
+import React from 'react';
 
-const Transfer = () => null
+const Transfer = () => <div />;
 
-export default Transfer
+export default Transfer;

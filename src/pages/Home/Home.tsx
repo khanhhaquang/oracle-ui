@@ -1,5 +1,9 @@
-import React from "react"
+import React from 'react';
+import { Title } from './components';
 
-const Home = () => null
-
-export default Home
+const Home = () => (
+  <main>
+    <Title />
+  </main>
+);
+export default Home;
