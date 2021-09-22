@@ -1,0 +1,41 @@
+@import 'styles/variables';
+
+.transfer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1,
+  label {
+    color: $white;
+  }
+
+  h1,
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  input {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 0;
+    outline: none;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 0;
+    background-color: $blue;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+  }
+}

@@ -1,5 +1,13 @@
-$main-background-color: #443c61;
+// colors
+$main-background-color: #221334;
+$blue: #00d7d7;
+$white: #ffffff;
 
-$maxWidthMobile: 600px;
-$maxWidthTablet: 1024px;
+$activeColor: #76fcb3;
+$terminatedColor: #ff007a;
+$suspendedColor: #ffe500;
+
+// breakpoints
+$minWidthTablet: 600px;
+$minWidthDesktop: 1024px;
 $minWidthLargeDesktop: 1440px;
