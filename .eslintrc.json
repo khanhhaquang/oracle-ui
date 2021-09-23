@@ -15,11 +15,13 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "consistent-return": 0,
     "function-paren-newline": 0,
     "object-curly-newline": 0,
     "react/react-in-jsx-scope": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-props-no-spreading": 0,
+    "react/jsx-closing-bracket-location": 0,
     "import/prefer-default-export": 0,
     "implicit-arrow-linebreak": 0,
     "jest/no-mocks-import": "off",

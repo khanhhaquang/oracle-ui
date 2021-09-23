@@ -1,16 +1,13 @@
 import { useEffect } from 'react';
-import { useWeb3Context } from 'web3-react';
+import { useWeb3React } from '@web3-react/core';
+import { injectedConnector } from 'connectors';
 
 const useInitMetamask = () => {
-  const context = useWeb3Context();
-  const { error } = context;
-  const isLoading = !context.active && !context.error;
+  const { activate } = useWeb3React();
 
   useEffect(() => {
-    context.setFirstValidConnector(['MetaMask']);
+    activate(injectedConnector);
   }, []);
-
-  return { isLoading, error };
 };
 
 export default useInitMetamask;

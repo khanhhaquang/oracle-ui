@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Web3Provider from 'web3-react';
+import { Web3ReactProvider } from '@web3-react/core';
 import { Home, Transfer } from 'pages';
 import './App.scss';
-import connectors from 'connectors';
+import Web3 from 'web3';
+
+const getLibrary = (provider: any) => new Web3(provider);
 
 const App = () => (
-  <Web3Provider connectors={connectors} libraryName={'ethers.js' || 'web3.js' || null}>
+  <Web3ReactProvider getLibrary={getLibrary}>
     <Router>
       <Switch>
         <Route exact path={'/' || '/home'}>
@@ -19,7 +21,7 @@ const App = () => (
         </Route>
       </Switch>
     </Router>
-  </Web3Provider>
+  </Web3ReactProvider>
 );
 
 export default App;

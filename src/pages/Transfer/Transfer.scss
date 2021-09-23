@@ -9,33 +9,57 @@
   align-items: center;
 
   h1,
+  h4,
   label {
     color: $white;
+    width: 100%;
   }
 
   h1,
   h4 {
     margin-bottom: 2rem;
+    overflow: hidden;
+    text-align: center;
   }
 
+  form {
+    width: 100%;
+  }
+
+  label {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   input {
     display: block;
     margin-top: 0.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
     padding: 0.5rem;
     border: 0;
     outline: none;
   }
 
   button {
+    display: block;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
+    margin: 1rem auto;
     border: 0;
     background-color: $blue;
-    border-radius: 0.25rem;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
+
+    &.loading {
+      pointer-events: none;
+      background-color: hsl(201, 21%, 45%);
+    }
+  }
+
+  .error-txt {
+    width: 100%;
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
   }
 }
