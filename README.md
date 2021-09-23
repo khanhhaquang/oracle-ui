@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Routes
+## Routes
 
 - `/home` or `/`: Part I Oracle UI
 - `/transfer`: Part II Web3 Token transfer
