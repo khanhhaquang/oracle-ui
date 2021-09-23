@@ -1,6 +1,11 @@
-# Oracle sample UI  + Token transfer
+# Oracle sample UI + Token transfer
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Routes
+
+- `/home` or `/`: Part I Oracle UI
+- `/transfer`: Part II Web3 Token transfer
 
 ## Available Scripts
 

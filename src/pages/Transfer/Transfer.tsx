@@ -37,7 +37,6 @@ const Transfer = () => {
             (error: any) => {
               counter += 1;
               if (counter === to.length) {
-                console.log('🚀 ~ file: Transfer.tsx ~ line 39 ~ to.forEach ~ counter', counter);
                 setSubmitting(false);
               }
               if (error) {
